@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+#main-img{
+    position: absolute;
+    width: 350px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.left{
+    padding: 30px;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.right{
+    padding: 40px;
+    width: 50%;
+    height: 100%;
+    background-color: #BA3A31;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.top{
+    display: flex;
+    gap: 90px;
+}
+
+.top input{
+    padding-left: 60px;
+    font-size: 16px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #EFEFEF;
+    border: 1px solid #EFEFEF;
+}
+
+#search{
+    display: flex;
+}
+
+#icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    left: 20%;
+    opacity: 0.5;
+}
+
+.top h1{
+    font-family: sans-serif;
+    opacity: 0.8;
+}
+
+.bottom{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.bottom h1{
+    font-size: 60px;
+    font-family: cursive;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-weight: 500;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.content hr{
+    opacity: 0.3;
+    width: 150px;
+}
+
+.point{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 62px;
+    bottom: 16%;
+}
+
+.ball{
+    width: 5px;
+    height: 5px;
+    background-color: #BA3A31;
+    border-radius: 50%;
+}
+
+.right-top{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.right-bottom{
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+#bug{
+    width:60px;
+}
+
+#info hr{
+    height: 100px;
+}
+
+.right-bottom h1{
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.pics{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:30px;
+    gap: 18px;
+    right: -10px;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    opacity: 0.8;
+    line-height: 1.2;
+}
+
+h2{
+    color:#F7DDB3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+.outer{
+    width:50px;
+    height:20px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.inner{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+button{
+    width:200px;
+    background-color: #F7DDB3;
+    font-size: 14px;
+    padding:10px 30px;
+    border-radius: 10px;
+    border: 1px solid #F7DDB3;
+}
+
+.last-part{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.swipe{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right: 32%;
+}
+
+.swipe div{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.swipe-box{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.swipe-box div{
+    width: 30px;
+    height: 15px;
+    background-color: whitesmoke;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+.last{
+    display: flex;
+    gap: 20px;
+}
