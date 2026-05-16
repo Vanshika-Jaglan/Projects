@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px 50px;
+    background-color: #FEFCF8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 8% 25% 3% 16% 8% 17% 3% 20%;
+    grid-template-areas: 
+    "header header header header header"
+    "top-left heading heading heading top-right"
+    "top-left top-left-div1 centre top-right-div1 top-right"
+    "main-left top-left-div1 centre top-right-div1 main-right"
+    "main-left top-left-div2 centre top-right-div1 main-right"
+    "main-left top-left-div2 centre top-right-div2 main-right"
+    "bottom-left bottom-left centre bottom-right bottom-right"
+    "bottom-left bottom-left bottom-centre bottom-right bottom-right";
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav{
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.header h2{
+    font-size: 25px;
+}
+
+.header .icons{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .icons i:nth-last-child(1){
+    color:white;
+    border-radius: 50%;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.header .icons i{
+    font-size: 20px;
+}
+
+.heading{
+    grid-area: heading;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.heading h1{
+    font-weight: 600;
+}
+
+.top-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: top-right;
+}
+
+.top-right img{
+    width: 100px;
+    height: 100px;
+}
+
+.top-left{
+    padding: 0px 25px;
+    grid-area: top-left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.top-left p{
+    font-size: 12px;
+}
+
+.top-left h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-left{
+    grid-area: main-left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-left div{
+    height: 180px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.main-left div img{
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    scale: 1.5;
+    
+}
+
+.top-left-div1{
+    grid-area: top-left-div1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.top-left-div1 div{
+    height: 100px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.top-left-div1 div img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    scale: 1.5;
+}
+
+.top-left-div2{
+    grid-area: top-left-div2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-left-div2 div{
+    height: 130px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.top-left-div2 div img{
+    width: 150px;
+    height: 130px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.top-right-div1{
+    grid-area: top-right-div1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right-div1 div{
+    height: 160px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.top-right-div1 div img{
+    height: 160px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.top-right-div2{
+    grid-area: top-right-div2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right-div2 div{
+    height: 100px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.top-right-div2 div img{
+    height: 100px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    scale: 1.2;
+}
+
+.centre{
+    grid-area: centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centre div{
+    width: 180px;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.centre div img{
+    width: 180px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-right{
+    grid-area: main-right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.main-right div{
+    width: 150px;
+    height: 180px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main-right div img{
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.bottom-left{
+    grid-area: bottom-left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.bottom-left p{
+    font-size: 12px;
+}
+
+.bottom-left h3{
+    font-family: cursive;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.bottom-right{
+    grid-area: bottom-right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:20px;
+}
+
+.bottom-right #part{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.bottom-right #part div{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.bottom-right #part h4{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.bottom-right h2{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.bottom-right i{
+    font-size: 50px;
+}
+
+.bottom-centre{
+    grid-area: bottom-centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-centre button{
+    position: relative;
+    background-color: white;
+    padding: 15px;
+    padding-right: 25px;
+    font-size: 12px;
+    border: 1px solid rgb(160, 158, 158);
+    border-radius: 10px;
+}
+
+.bottom-centre button i{
+    font-size: 25px;
+    position: absolute;
+    top:10px;
+    right: 3px;
+}
+
+#flower{
+    width: 50px;
+    position: absolute;
+    top: 12%;
+    left: 8%;
+}
+
+#flower2{
+    width: 50px;
+    position: absolute;
+    top: 12%;
+    right: 5%;
+}
+
+#star{
+    width: 40px;
+    position: absolute;
+    top:30%;
+    left: 49%
+}
